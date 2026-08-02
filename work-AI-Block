@@ -1,12 +1,12 @@
 ! ============================================================
-! BLOCKLIST ADGUARD HOME — BLOQUEIO TOTAL DE INTELIGÊNCIA ARTIFICIAL
-! Versão: MAX (Todas as empresas, APIs, infraestrutura, subdomínios)
+! BLOCKLIST: work-AI-Block
+! Descrição: Bloqueio total de serviços de Inteligência Artificial
 ! Formato: AdGuard Home
+! Licença: GPL-2.0
+! Mantenedor: nog02206-lang
 ! ============================================================
 
-! --------------------------------------------------
-! 1. OPENAI / CHATGPT
-! --------------------------------------------------
+! --- OPENAI / CHATGPT ---
 ||openai.com^
 ||chatgpt.com^
 ||platform.openai.com^
@@ -21,9 +21,7 @@
 ||*.openai.com^
 ||*.chatgpt.com^
 
-! --------------------------------------------------
-! 2. ANTHROPIC / CLAUDE
-! --------------------------------------------------
+! --- ANTHROPIC / CLAUDE ---
 ||anthropic.com^
 ||claude.ai^
 ||api.anthropic.com^
@@ -31,9 +29,7 @@
 ||*.anthropic.com^
 ||*.claude.ai^
 
-! --------------------------------------------------
-! 3. GOOGLE AI / GEMINI / BARD / VERTEX
-! --------------------------------------------------
+! --- GOOGLE AI / GEMINI / BARD / VERTEX ---
 ||gemini.google.com^
 ||aistudio.google.com^
 ||ai.google.dev^
@@ -53,9 +49,7 @@
 ||*.ai.google^
 ||*.googleapis.com^$dnstype=~A|~AAAA|~CNAME
 
-! --------------------------------------------------
-! 4. MICROSOFT / AZURE AI / COPILOT / OPENAI AZURE
-! --------------------------------------------------
+! --- MICROSOFT / AZURE AI / COPILOT ---
 ||copilot.microsoft.com^
 ||copilot.cloud.microsoft^
 ||ai.microsoft.com^
@@ -68,9 +62,7 @@
 ||*.ai.azure.com^
 ||bing.com^$dnstype=~A|~AAAA|~CNAME
 
-! --------------------------------------------------
-! 5. AMAZON / AWS BEDROCK / SAGEMAKER
-! --------------------------------------------------
+! --- AMAZON / AWS BEDROCK / SAGEMAKER ---
 ||bedrock.aws^
 ||bedrock-runtime.*.amazonaws.com^
 ||bedrock.*.amazonaws.com^
@@ -82,142 +74,104 @@
 ||aws.amazon.com/bedrock^
 ||aws.amazon.com/sagemaker^
 
-! --------------------------------------------------
-! 6. META AI / LLAMA
-! --------------------------------------------------
+! --- META AI / LLAMA ---
 ||meta.ai^
 ||llama.meta.com^
 ||ai.meta.com^
 ||*.meta.ai^
 
-! --------------------------------------------------
-! 7. X / GROK / XAI
-! --------------------------------------------------
+! --- X / GROK / XAI ---
 ||x.ai^
 ||grok.x.ai^
 ||api.x.ai^
 ||*.x.ai^
 
-! --------------------------------------------------
-! 8. COHERE
-! --------------------------------------------------
+! --- COHERE ---
 ||cohere.com^
 ||cohere.ai^
 ||api.cohere.com^
 ||*.cohere.com^
 ||*.cohere.ai^
 
-! --------------------------------------------------
-! 9. MISTRAL AI
-! --------------------------------------------------
+! --- MISTRAL AI ---
 ||mistral.ai^
 ||api.mistral.ai^
 ||chat.mistral.ai^
 ||*.mistral.ai^
 
-! --------------------------------------------------
-! 10. DEEPSEEK
-! --------------------------------------------------
+! --- DEEPSEEK ---
 ||deepseek.com^
 ||chat.deepseek.com^
 ||api.deepseek.com^
 ||*.deepseek.com^
 
-! --------------------------------------------------
-! 11. AI21 / JURASSIC
-! --------------------------------------------------
+! --- AI21 ---
 ||ai21.com^
 ||studio.ai21.com^
 ||api.ai21.com^
 ||*.ai21.com^
 
-! --------------------------------------------------
-! 12. ALEPH ALPHA
-! --------------------------------------------------
+! --- ALEPH ALPHA ---
 ||alephalpha.com^
 ||api.alephalpha.com^
 ||*.alephalpha.com^
 
-! --------------------------------------------------
-! 13. INFLECTION / PI
-! --------------------------------------------------
+! --- INFLECTION / PI ---
 ||inflection.ai^
 ||pi.ai^
 ||*.inflection.ai^
 ||*.pi.ai^
 
-! --------------------------------------------------
-! 14. REKA AI
-! --------------------------------------------------
+! --- REKA AI ---
 ||reka.ai^
 ||api.reka.ai^
 ||*.reka.ai^
 
-! --------------------------------------------------
-! 15. LIQUID AI
-! --------------------------------------------------
+! --- LIQUID AI ---
 ||liquid.ai^
 ||*.liquid.ai^
 
-! --------------------------------------------------
-! 16. SAKANA AI
-! --------------------------------------------------
+! --- SAKANA AI ---
 ||sakana.ai^
 ||*.sakana.ai^
 
-! --------------------------------------------------
-! 17. TOGETHER AI
-! --------------------------------------------------
+! --- TOGETHER AI ---
 ||together.ai^
 ||api.together.ai^
 ||*.together.ai^
 
-! --------------------------------------------------
-! 18. NOMIC AI
-! --------------------------------------------------
+! --- NOMIC AI ---
 ||nomic.ai^
 ||*.nomic.ai^
 
-! --------------------------------------------------
-! 19. MOSAICML / DATABRICKS
-! --------------------------------------------------
+! --- MOSAICML / DATABRICKS ---
 ||mosaicml.com^
 ||*.mosaicml.com^
 ||databricks.com^$dnstype=~A|~AAAA|~CNAME
 
-! --------------------------------------------------
-! 20. LIGHTON
-! --------------------------------------------------
+! --- LIGHTON ---
 ||lighton.ai^
 ||*.lighton.ai^
 
-! --------------------------------------------------
-! 21. BLACK FOREST LABS (FLUX)
-! --------------------------------------------------
+! --- BLACK FOREST LABS ---
 ||blackforestlabs.ai^
 ||api.blackforestlabs.ai^
 ||*.blackforestlabs.ai^
 
-! --------------------------------------------------
-! 22. STABILITY AI
-! --------------------------------------------------
+! --- STABILITY AI ---
 ||stability.ai^
 ||api.stability.ai^
 ||platform.stability.ai^
 ||*.stability.ai^
 
-! --------------------------------------------------
-! 23. HUGGING FACE
-! --------------------------------------------------
+! --- HUGGING FACE ---
 ||huggingface.co^
 ||api.huggingface.co^
 ||*.huggingface.co^
 ||huggingface.com^
 ||*.huggingface.com^
 
-! --------------------------------------------------
-! 24. PROVEDORES DE API / INFERÊNCIA
-! --------------------------------------------------
+! --- PROVEDORES DE API / INFERÊNCIA ---
 ||openrouter.ai^
 ||api.openrouter.ai^
 ||*.openrouter.ai^
@@ -258,9 +212,7 @@
 ||api.perplexity.ai^
 ||*.perplexity.ai^
 
-! --------------------------------------------------
-! 25. IA PARA CÓDIGO
-! --------------------------------------------------
+! --- IA PARA CÓDIGO ---
 ||cursor.com^
 ||*.cursor.com^
 ||cursor.sh^
@@ -285,9 +237,7 @@
 ||githubcopilot.com^
 ||*.githubcopilot.com^
 
-! --------------------------------------------------
-! 26. AGENTES / AUTOMAÇÃO IA
-! --------------------------------------------------
+! --- AGENTES / AUTOMAÇÃO IA ---
 ||crew.ai^
 ||crewai.com^
 ||*.crew.ai^
@@ -309,9 +259,7 @@
 ||multi-on.com^
 ||*.multi-on.com^
 
-! --------------------------------------------------
-! 27. VOZ / SPEECH-TO-TEXT / TTS
-! --------------------------------------------------
+! --- VOZ / SPEECH / TTS ---
 ||elevenlabs.io^
 ||api.elevenlabs.io^
 ||*.elevenlabs.io^
@@ -358,9 +306,7 @@
 ||lovo.ai^
 ||*.lovo.ai^
 
-! --------------------------------------------------
-! 28. MÚSICA / ÁUDIO GENERATIVO
-! --------------------------------------------------
+! --- MÚSICA / ÁUDIO GENERATIVO ---
 ||suno.ai^
 ||suno.com^
 ||*.suno.ai^
@@ -380,9 +326,7 @@
 ||udio.ai^
 ||*.udio.ai^
 
-! --------------------------------------------------
-! 29. VÍDEO / IMAGEM GENERATIVA
-! --------------------------------------------------
+! --- VÍDEO / IMAGEM GENERATIVA ---
 ||synthesia.io^
 ||*.synthesia.io^
 ||heygen.com^
@@ -424,9 +368,7 @@
 ||hedra.com^
 ||*.hedra.com^
 
-! --------------------------------------------------
-! 30. LEGAL / IA JURÍDICA
-! --------------------------------------------------
+! --- LEGAL / IA JURÍDICA ---
 ||harvey.ai^
 ||*.harvey.ai^
 ||casetext.com^
@@ -440,9 +382,7 @@
 ||coactive.ai^
 ||*.coactive.ai^
 
-! --------------------------------------------------
-! 31. ENTERPRISE IA / CUSTOMER SERVICE
-! --------------------------------------------------
+! --- ENTERPRISE IA ---
 ||ada.cx^
 ||*.ada.cx^
 ||boost.ai^
@@ -475,9 +415,7 @@
 ||*.yellow.ai^
 ||amplitude.com^$dnstype=~A|~AAAA|~CNAME
 
-! --------------------------------------------------
-! 32. COPYWRITING / MARKETING IA
-! --------------------------------------------------
+! --- COPYWRITING / MARKETING IA ---
 ||jasper.ai^
 ||*.jasper.ai^
 ||copy.ai^
@@ -495,9 +433,7 @@
 ||wordtune.com^
 ||*.wordtune.com^
 
-! --------------------------------------------------
-! 33. CHATBOTS / COMPANHEIROS IA
-! --------------------------------------------------
+! --- CHATBOTS / COMPANHEIROS IA ---
 ||character.ai^
 ||*.character.ai^
 ||pi.ai^
@@ -519,9 +455,7 @@
 ||spicychat.ai^
 ||*.spicychat.ai^
 
-! --------------------------------------------------
-! 34. TRADUÇÃO / LOCALIZAÇÃO IA
-! --------------------------------------------------
+! --- TRADUÇÃO / LOCALIZAÇÃO IA ---
 ||papercup.com^
 ||*.papercup.com^
 ||translate.ai^
@@ -531,9 +465,7 @@
 ||lokalise.com^
 ||*.lokalise.com^
 
-! --------------------------------------------------
-! 35. BANCOS VETORIAIS / RAG / INFRA
-! --------------------------------------------------
+! --- BANCOS VETORIAIS / RAG / INFRA ---
 ||pinecone.io^
 ||*.pinecone.io^
 ||weaviate.io^
@@ -554,9 +486,7 @@
 ||*.pgvector.com^
 ||redis.io^$dnstype=~A|~AAAA|~CNAME
 
-! --------------------------------------------------
-! 36. ECOSSISTEMAS CHINESES DE IA
-! --------------------------------------------------
+! --- ECOSSISTEMAS CHINESES ---
 ||qwen.ai^
 ||*.qwen.ai^
 ||tongyi.aliyun.com^
@@ -582,15 +512,11 @@
 ||01.ai^
 ||*.01.ai^
 
-! --------------------------------------------------
-! 37. PLATAFORMAS DE CONTEÚDO COM IA NATIVA
-! --------------------------------------------------
+! --- PLATAFORMAS DE CONTEÚDO IA ---
 ||descript.com^
 ||*.descript.com^
 
-! --------------------------------------------------
-! 38. OUTRAS IAS / MOTORES / PLATAFORMAS
-! --------------------------------------------------
+! --- OUTRAS IAS / PLATAFORMAS ---
 ||you.com^
 ||*.you.com^
 ||phind.com^
@@ -633,46 +559,35 @@
 ||sierra.com^
 ||*.sierra.com^
 
-! --------------------------------------------------
-! 39. CLOUDFLARE AI / WORKERS AI
-! --------------------------------------------------
+! --- CLOUDFLARE AI ---
 ||workers.ai^
 ||*.workers.ai^
 ||gateway.ai.cloudflare.com^
 ||*.gateway.ai.cloudflare.com^
 
-! --------------------------------------------------
-! 40. NVIDIA AI / NIM / FOUNDATION
-! --------------------------------------------------
+! --- NVIDIA AI ---
 ||nvidia.com^$dnstype=~A|~AAAA|~CNAME
 ||build.nvidia.com^
 ||*.build.nvidia.com^
 ||ai.nvidia.com^
 ||*.ai.nvidia.com^
 
-! --------------------------------------------------
-! 41. APPLE / SIRI / APPLE INTELLIGENCE
-! --------------------------------------------------
+! --- APPLE / SIRI ---
 ||apple.com^$dnstype=~A|~AAAA|~CNAME
 ||smoot.apple.com^
 ||guzzoni.apple.com^
 ||*.smoot.apple.com^
 ||*.guzzoni.apple.com^
 
-! --------------------------------------------------
-! 42. SAMSUNG / GALAXY AI
-! --------------------------------------------------
+! --- SAMSUNG / GALAXY AI ---
 ||samsung.com^$dnstype=~A|~AAAA|~CNAME
 ||samsungapps.com^
 ||*.samsungapps.com^
 
-! --------------------------------------------------
-! 43. WILDCARDS AGRESSIVOS DE DOMÍNIOS IA
-! --------------------------------------------------
+! --- WILDCARDS AGRESSIVOS ---
 ||*.ai^
 ||*.ml^
 
 ! ============================================================
-! FIM DA LISTA
-! Total: ~350+ entradas diretas + wildcards
+! FIM
 ! ============================================================
