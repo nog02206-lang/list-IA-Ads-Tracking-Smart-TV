@@ -1,230 +1,678 @@
-# ============================================================
-# BLOCKLIST ADGUARD HOME — EMPRESAS DE IA (CORE BUSINESS)
-# Curada: removidas empresas genéricas (CRM, ERP, produtividade,
-# cloud geral) que apenas possuem IA como feature.
-# ============================================================
+! ============================================================
+! BLOCKLIST ADGUARD HOME — BLOQUEIO TOTAL DE INTELIGÊNCIA ARTIFICIAL
+! Versão: MAX (Todas as empresas, APIs, infraestrutura, subdomínios)
+! Formato: AdGuard Home
+! ============================================================
 
-# --------------------------------------------------
-# 1. GRANDES LABORATÓRIOS / MODELOS FUNDACIONAIS
-# --------------------------------------------------
+! --------------------------------------------------
+! 1. OPENAI / CHATGPT
+! --------------------------------------------------
 ||openai.com^
 ||chatgpt.com^
+||platform.openai.com^
+||api.openai.com^
+||files.openai.com^
+||chat.openai.com^
+||auth.openai.com^
+||cdn.openai.com^
+||events.openai.com^
+||oaistatic.com^
+||oaiusercontent.com^
+||*.openai.com^
+||*.chatgpt.com^
+
+! --------------------------------------------------
+! 2. ANTHROPIC / CLAUDE
+! --------------------------------------------------
 ||anthropic.com^
 ||claude.ai^
-||cohere.com^
-||cohere.ai^
-||mistral.ai^
-||deepseek.com^
-||ai21.com^
-||alephalpha.com^
-||inflection.ai^
-||reka.ai^
-||liquid.ai^
-||sakana.ai^
-||together.ai^
-||nomic.ai^
-||mosaicml.com^
-||lighton.ai^
-||blackforestlabs.ai^
-||stability.ai^
-||huggingface.co^
+||api.anthropic.com^
+||console.anthropic.com^
+||*.anthropic.com^
+||*.claude.ai^
 
-# --------------------------------------------------
-# 2. PROVEDORES DE API / INFERÊNCIA / DEPLOYMENT
-# --------------------------------------------------
-||openrouter.ai^
-||groq.com^
-||fireworks.ai^
-||deepinfra.com^
-||novita.ai^
-||replicate.com^
-||baseten.co^
-||predibase.com^
-||anyscale.com^
-||modal.com^
-||fal.ai^
-||banana.dev^
-
-# --------------------------------------------------
-# 3. IA PARA CÓDIGO / DESENVOLVIMENTO
-# --------------------------------------------------
-||cursor.com^
-||codeium.com^
-||windsurf.com^
-||tabnine.com^
-||blackbox.ai^
-||continue.dev^
-||aider.chat^
-
-# --------------------------------------------------
-# 4. AGENTES / AUTOMAÇÃO IA
-# --------------------------------------------------
-||crew.ai^
-||crewai.com^
-||babyagi.com^
-||superagi.com^
-||agentgpt.reworkd.ai^
-||fixie.ai^
-||adept.ai^
-||cognition.ai^
-||devin.ai^
-
-# --------------------------------------------------
-# 5. VOZ / SPEECH-TO-TEXT / TEXT-TO-SPEECH
-# --------------------------------------------------
-||elevenlabs.io^
-||assemblyai.com^
-||deepgram.com^
-||speechmatics.com^
-||rev.ai^
-||otter.ai^
-||aisense.com^
-||sonix.ai^
-||trint.com^
-||voicemod.net^
-||voicemod.ai^
-||cartesia.ai^
-||hume.ai^
-||smallest.ai^
-||vapi.ai^
-||retellai.com^
-||play.ai^
-
-# --------------------------------------------------
-# 6. MÚSICA / ÁUDIO GENERATIVO
-# --------------------------------------------------
-||suno.ai^
-||suno.com^
-||udio.com^
-||soundraw.io^
-||boomy.com^
-||aiva.ai^
-||beatoven.ai^
-||stableaudio.com^
-
-# --------------------------------------------------
-# 7. VÍDEO / IMAGEM GENERATIVA
-# --------------------------------------------------
-||synthesia.io^
-||heygen.com^
-||d-id.com^
-||leonardo.ai^
-||ideogram.ai^
-||krea.ai^
-||openart.ai^
-||civitai.com^
-||tensor.art^
-||getimg.ai^
-||genmo.ai^
-||kaiber.ai^
-
-# --------------------------------------------------
-# 8. LEGAL / IA JURÍDICA
-# --------------------------------------------------
-||harvey.ai^
-||casetext.com^
-||rossintelligence.com^
-||legalsifter.com^
-||doNotPay.com^
-
-# --------------------------------------------------
-# 9. CUSTOMER SERVICE / VENDAS / ENTERPRISE IA
-# (Core business é IA, não plataforma genérica)
-# --------------------------------------------------
-||ada.cx^
-||boost.ai^
-||ultimate.ai^
-||forethought.ai^
-||observe.ai^
-||cresta.com^
-||regie.ai^
-||lavender.ai^
-||moveworks.com^
-||glean.com^
-||dust.tt^
-||fin.ai^
-||aisera.com^
-
-# --------------------------------------------------
-# 10. COPYWRITING / MARKETING IA
-# --------------------------------------------------
-||jasper.ai^
-||copy.ai^
-||writesonic.com^
-||writer.com^
-||writer.ai^
-
-# --------------------------------------------------
-# 11. CHATBOTS / COMPANHEIROS IA
-# --------------------------------------------------
-||character.ai^
-||pi.ai^
-||replika.ai^
-
-# --------------------------------------------------
-# 12. TRADUÇÃO / LOCALIZAÇÃO IA
-# --------------------------------------------------
-||papercup.com^
-||translate.ai^
-
-# --------------------------------------------------
-# 13. BANCOS VETORIAIS / RAG / INFRASTRUCTURE
-# --------------------------------------------------
-||pinecone.io^
-||weaviate.io^
-||qdrant.tech^
-||milvus.io^
-||chroma.com^
-||lancedb.com^
-||vespa.ai^
-||zilliz.com^
-
-# --------------------------------------------------
-# 14. ECOSSISTEMAS CHINESES DE IA
-# --------------------------------------------------
-||qwen.ai^
-||tongyi.aliyun.com^
-||ernie.baidu.com^
-||wenxin.baidu.com^
-||hunyuan.tencent.com^
-||doubao.com^
-||kimi.com^
-||stepfun.com^
-||minimax.chat^
-
-# --------------------------------------------------
-# 15. PLATAFORMAS DE CONTEÚDO COM IA NATIVA
-# --------------------------------------------------
-||descript.com^
-
-# --------------------------------------------------
-# 16. INFRAESTRUTURA CLOUD IA (Endpoints / APIs)
-# --------------------------------------------------
-# AWS
-||bedrock.aws^
-||bedrock-runtime.*.amazonaws.com^
-||sagemaker.*.amazonaws.com^
-||runtime.sagemaker.*.amazonaws.com^
-
-# Google Cloud
+! --------------------------------------------------
+! 3. GOOGLE AI / GEMINI / BARD / VERTEX
+! --------------------------------------------------
+||gemini.google.com^
+||aistudio.google.com^
+||ai.google.dev^
+||generativelanguage.googleapis.com^
 ||vertexai.googleapis.com^
 ||aiplatform.googleapis.com^
-||generativelanguage.googleapis.com^
-||aistudio.google.com^
+||automl.googleapis.com^
+||speech.googleapis.com^
+||vision.googleapis.com^
+||language.googleapis.com^
+||translate.googleapis.com^
+||dialogflow.googleapis.com^
+||assistant.google.com^
+||bard.google.com^
+||gemini.googleusercontent.com^
+||*.googleusercontent.com^$dnstype=~A|~AAAA|~CNAME
+||*.ai.google^
+||*.googleapis.com^$dnstype=~A|~AAAA|~CNAME
 
-# Microsoft Azure
+! --------------------------------------------------
+! 4. MICROSOFT / AZURE AI / COPILOT / OPENAI AZURE
+! --------------------------------------------------
+||copilot.microsoft.com^
+||copilot.cloud.microsoft^
+||ai.microsoft.com^
+||azure.microsoft.com^$dnstype=~A|~AAAA|~CNAME
 ||openai.azure.com^
+||*.openai.azure.com^
 ||cognitiveservices.azure.com^
+||*.cognitiveservices.azure.com^
 ||ai.azure.com^
+||*.ai.azure.com^
+||bing.com^$dnstype=~A|~AAAA|~CNAME
 
-# Cloudflare
+! --------------------------------------------------
+! 5. AMAZON / AWS BEDROCK / SAGEMAKER
+! --------------------------------------------------
+||bedrock.aws^
+||bedrock-runtime.*.amazonaws.com^
+||bedrock.*.amazonaws.com^
+||sagemaker.*.amazonaws.com^
+||runtime.sagemaker.*.amazonaws.com^
+||api.sagemaker.*.amazonaws.com^
+||*.sagemaker.aws^
+||*.bedrock.aws^
+||aws.amazon.com/bedrock^
+||aws.amazon.com/sagemaker^
+
+! --------------------------------------------------
+! 6. META AI / LLAMA
+! --------------------------------------------------
+||meta.ai^
+||llama.meta.com^
+||ai.meta.com^
+||*.meta.ai^
+
+! --------------------------------------------------
+! 7. X / GROK / XAI
+! --------------------------------------------------
+||x.ai^
+||grok.x.ai^
+||api.x.ai^
+||*.x.ai^
+
+! --------------------------------------------------
+! 8. COHERE
+! --------------------------------------------------
+||cohere.com^
+||cohere.ai^
+||api.cohere.com^
+||*.cohere.com^
+||*.cohere.ai^
+
+! --------------------------------------------------
+! 9. MISTRAL AI
+! --------------------------------------------------
+||mistral.ai^
+||api.mistral.ai^
+||chat.mistral.ai^
+||*.mistral.ai^
+
+! --------------------------------------------------
+! 10. DEEPSEEK
+! --------------------------------------------------
+||deepseek.com^
+||chat.deepseek.com^
+||api.deepseek.com^
+||*.deepseek.com^
+
+! --------------------------------------------------
+! 11. AI21 / JURASSIC
+! --------------------------------------------------
+||ai21.com^
+||studio.ai21.com^
+||api.ai21.com^
+||*.ai21.com^
+
+! --------------------------------------------------
+! 12. ALEPH ALPHA
+! --------------------------------------------------
+||alephalpha.com^
+||api.alephalpha.com^
+||*.alephalpha.com^
+
+! --------------------------------------------------
+! 13. INFLECTION / PI
+! --------------------------------------------------
+||inflection.ai^
+||pi.ai^
+||*.inflection.ai^
+||*.pi.ai^
+
+! --------------------------------------------------
+! 14. REKA AI
+! --------------------------------------------------
+||reka.ai^
+||api.reka.ai^
+||*.reka.ai^
+
+! --------------------------------------------------
+! 15. LIQUID AI
+! --------------------------------------------------
+||liquid.ai^
+||*.liquid.ai^
+
+! --------------------------------------------------
+! 16. SAKANA AI
+! --------------------------------------------------
+||sakana.ai^
+||*.sakana.ai^
+
+! --------------------------------------------------
+! 17. TOGETHER AI
+! --------------------------------------------------
+||together.ai^
+||api.together.ai^
+||*.together.ai^
+
+! --------------------------------------------------
+! 18. NOMIC AI
+! --------------------------------------------------
+||nomic.ai^
+||*.nomic.ai^
+
+! --------------------------------------------------
+! 19. MOSAICML / DATABRICKS
+! --------------------------------------------------
+||mosaicml.com^
+||*.mosaicml.com^
+||databricks.com^$dnstype=~A|~AAAA|~CNAME
+
+! --------------------------------------------------
+! 20. LIGHTON
+! --------------------------------------------------
+||lighton.ai^
+||*.lighton.ai^
+
+! --------------------------------------------------
+! 21. BLACK FOREST LABS (FLUX)
+! --------------------------------------------------
+||blackforestlabs.ai^
+||api.blackforestlabs.ai^
+||*.blackforestlabs.ai^
+
+! --------------------------------------------------
+! 22. STABILITY AI
+! --------------------------------------------------
+||stability.ai^
+||api.stability.ai^
+||platform.stability.ai^
+||*.stability.ai^
+
+! --------------------------------------------------
+! 23. HUGGING FACE
+! --------------------------------------------------
+||huggingface.co^
+||api.huggingface.co^
+||*.huggingface.co^
+||huggingface.com^
+||*.huggingface.com^
+
+! --------------------------------------------------
+! 24. PROVEDORES DE API / INFERÊNCIA
+! --------------------------------------------------
+||openrouter.ai^
+||api.openrouter.ai^
+||*.openrouter.ai^
+||groq.com^
+||api.groq.com^
+||*.groq.com^
+||fireworks.ai^
+||api.fireworks.ai^
+||*.fireworks.ai^
+||deepinfra.com^
+||api.deepinfra.com^
+||*.deepinfra.com^
+||novita.ai^
+||api.novita.ai^
+||*.novita.ai^
+||replicate.com^
+||api.replicate.com^
+||*.replicate.com^
+||baseten.co^
+||*.baseten.co^
+||predibase.com^
+||*.predibase.com^
+||anyscale.com^
+||*.anyscale.com^
+||modal.com^
+||*.modal.com^
+||modal.run^
+||*.modal.run^
+||fal.ai^
+||*.fal.ai^
+||banana.dev^
+||*.banana.dev^
+||octo.ai^
+||*.octo.ai^
+||lepton.ai^
+||*.lepton.ai^
+||perplexity.ai^
+||api.perplexity.ai^
+||*.perplexity.ai^
+
+! --------------------------------------------------
+! 25. IA PARA CÓDIGO
+! --------------------------------------------------
+||cursor.com^
+||*.cursor.com^
+||cursor.sh^
+||*.cursor.sh^
+||codeium.com^
+||*.codeium.com^
+||windsurf.com^
+||*.windsurf.com^
+||tabnine.com^
+||*.tabnine.com^
+||blackbox.ai^
+||*.blackbox.ai^
+||continue.dev^
+||*.continue.dev^
+||aider.chat^
+||*.aider.chat^
+||sourcegraph.com^
+||*.sourcegraph.com^
+||replit.com^
+||*.replit.com^
+||github.com^$dnstype=~A|~AAAA|~CNAME
+||githubcopilot.com^
+||*.githubcopilot.com^
+
+! --------------------------------------------------
+! 26. AGENTES / AUTOMAÇÃO IA
+! --------------------------------------------------
+||crew.ai^
+||crewai.com^
+||*.crew.ai^
+||*.crewai.com^
+||babyagi.com^
+||*.babyagi.com^
+||superagi.com^
+||*.superagi.com^
+||agentgpt.reworkd.ai^
+||*.reworkd.ai^
+||fixie.ai^
+||*.fixie.ai^
+||adept.ai^
+||*.adept.ai^
+||cognition.ai^
+||*.cognition.ai^
+||devin.ai^
+||*.devin.ai^
+||multi-on.com^
+||*.multi-on.com^
+
+! --------------------------------------------------
+! 27. VOZ / SPEECH-TO-TEXT / TTS
+! --------------------------------------------------
+||elevenlabs.io^
+||api.elevenlabs.io^
+||*.elevenlabs.io^
+||assemblyai.com^
+||api.assemblyai.com^
+||*.assemblyai.com^
+||deepgram.com^
+||api.deepgram.com^
+||*.deepgram.com^
+||speechmatics.com^
+||*.speechmatics.com^
+||rev.ai^
+||*.rev.ai^
+||otter.ai^
+||*.otter.ai^
+||aisense.com^
+||*.aisense.com^
+||sonix.ai^
+||*.sonix.ai^
+||trint.com^
+||*.trint.com^
+||voicemod.net^
+||*.voicemod.net^
+||voicemod.ai^
+||*.voicemod.ai^
+||cartesia.ai^
+||*.cartesia.ai^
+||hume.ai^
+||*.hume.ai^
+||smallest.ai^
+||*.smallest.ai^
+||vapi.ai^
+||*.vapi.ai^
+||retellai.com^
+||*.retellai.com^
+||play.ai^
+||*.play.ai^
+||play.ht^
+||*.play.ht^
+||wellsaidlabs.com^
+||*.wellsaidlabs.com^
+||murf.ai^
+||*.murf.ai^
+||lovo.ai^
+||*.lovo.ai^
+
+! --------------------------------------------------
+! 28. MÚSICA / ÁUDIO GENERATIVO
+! --------------------------------------------------
+||suno.ai^
+||suno.com^
+||*.suno.ai^
+||*.suno.com^
+||udio.com^
+||*.udio.com^
+||soundraw.io^
+||*.soundraw.io^
+||boomy.com^
+||*.boomy.com^
+||aiva.ai^
+||*.aiva.ai^
+||beatoven.ai^
+||*.beatoven.ai^
+||stableaudio.com^
+||*.stableaudio.com^
+||udio.ai^
+||*.udio.ai^
+
+! --------------------------------------------------
+! 29. VÍDEO / IMAGEM GENERATIVA
+! --------------------------------------------------
+||synthesia.io^
+||*.synthesia.io^
+||heygen.com^
+||*.heygen.com^
+||d-id.com^
+||*.d-id.com^
+||leonardo.ai^
+||*.leonardo.ai^
+||ideogram.ai^
+||*.ideogram.ai^
+||krea.ai^
+||*.krea.ai^
+||openart.ai^
+||*.openart.ai^
+||civitai.com^
+||*.civitai.com^
+||tensor.art^
+||*.tensor.art^
+||getimg.ai^
+||*.getimg.ai^
+||genmo.ai^
+||*.genmo.ai^
+||kaiber.ai^
+||*.kaiber.ai^
+||runwayml.com^
+||*.runwayml.com^
+||pika.art^
+||*.pika.art^
+||luma.ai^
+||*.luma.ai^
+||haiper.ai^
+||*.haiper.ai^
+||pixverse.ai^
+||*.pixverse.ai^
+||viggle.ai^
+||*.viggle.ai^
+||klingai.com^
+||*.klingai.com^
+||hedra.com^
+||*.hedra.com^
+
+! --------------------------------------------------
+! 30. LEGAL / IA JURÍDICA
+! --------------------------------------------------
+||harvey.ai^
+||*.harvey.ai^
+||casetext.com^
+||*.casetext.com^
+||rossintelligence.com^
+||*.rossintelligence.com^
+||legalsifter.com^
+||*.legalsifter.com^
+||doNotPay.com^
+||*.doNotPay.com^
+||coactive.ai^
+||*.coactive.ai^
+
+! --------------------------------------------------
+! 31. ENTERPRISE IA / CUSTOMER SERVICE
+! --------------------------------------------------
+||ada.cx^
+||*.ada.cx^
+||boost.ai^
+||*.boost.ai^
+||ultimate.ai^
+||*.ultimate.ai^
+||forethought.ai^
+||*.forethought.ai^
+||observe.ai^
+||*.observe.ai^
+||cresta.com^
+||*.cresta.com^
+||regie.ai^
+||*.regie.ai^
+||lavender.ai^
+||*.lavender.ai^
+||moveworks.com^
+||*.moveworks.com^
+||glean.com^
+||*.glean.com^
+||dust.tt^
+||*.dust.tt^
+||fin.ai^
+||*.fin.ai^
+||aisera.com^
+||*.aisera.com^
+||kore.ai^
+||*.kore.ai^
+||yellow.ai^
+||*.yellow.ai^
+||amplitude.com^$dnstype=~A|~AAAA|~CNAME
+
+! --------------------------------------------------
+! 32. COPYWRITING / MARKETING IA
+! --------------------------------------------------
+||jasper.ai^
+||*.jasper.ai^
+||copy.ai^
+||*.copy.ai^
+||writesonic.com^
+||*.writesonic.com^
+||writer.com^
+||*.writer.com^
+||writer.ai^
+||*.writer.ai^
+||anyword.com^
+||*.anyword.com^
+||rytr.me^
+||*.rytr.me^
+||wordtune.com^
+||*.wordtune.com^
+
+! --------------------------------------------------
+! 33. CHATBOTS / COMPANHEIROS IA
+! --------------------------------------------------
+||character.ai^
+||*.character.ai^
+||pi.ai^
+||*.pi.ai^
+||replika.ai^
+||*.replika.ai^
+||chai.ml^
+||*.chai.ml^
+||anima.ai^
+||*.anima.ai^
+||kajiwoto.ai^
+||*.kajiwoto.ai^
+||candy.ai^
+||*.candy.ai^
+||crushon.ai^
+||*.crushon.ai^
+||janitorai.com^
+||*.janitorai.com^
+||spicychat.ai^
+||*.spicychat.ai^
+
+! --------------------------------------------------
+! 34. TRADUÇÃO / LOCALIZAÇÃO IA
+! --------------------------------------------------
+||papercup.com^
+||*.papercup.com^
+||translate.ai^
+||*.translate.ai^
+||smartcat.ai^
+||*.smartcat.ai^
+||lokalise.com^
+||*.lokalise.com^
+
+! --------------------------------------------------
+! 35. BANCOS VETORIAIS / RAG / INFRA
+! --------------------------------------------------
+||pinecone.io^
+||*.pinecone.io^
+||weaviate.io^
+||*.weaviate.io^
+||qdrant.tech^
+||*.qdrant.tech^
+||milvus.io^
+||*.milvus.io^
+||chroma.com^
+||*.chroma.com^
+||lancedb.com^
+||*.lancedb.com^
+||vespa.ai^
+||*.vespa.ai^
+||zilliz.com^
+||*.zilliz.com^
+||pgvector.com^
+||*.pgvector.com^
+||redis.io^$dnstype=~A|~AAAA|~CNAME
+
+! --------------------------------------------------
+! 36. ECOSSISTEMAS CHINESES DE IA
+! --------------------------------------------------
+||qwen.ai^
+||*.qwen.ai^
+||tongyi.aliyun.com^
+||*.tongyi.aliyun.com^
+||ernie.baidu.com^
+||*.ernie.baidu.com^
+||wenxin.baidu.com^
+||*.wenxin.baidu.com^
+||hunyuan.tencent.com^
+||*.hunyuan.tencent.com^
+||doubao.com^
+||*.doubao.com^
+||kimi.com^
+||*.kimi.com^
+||stepfun.com^
+||*.stepfun.com^
+||minimax.chat^
+||*.minimax.chat^
+||moonshot.cn^
+||*.moonshot.cn^
+||baichuan-ai.com^
+||*.baichuan-ai.com^
+||01.ai^
+||*.01.ai^
+
+! --------------------------------------------------
+! 37. PLATAFORMAS DE CONTEÚDO COM IA NATIVA
+! --------------------------------------------------
+||descript.com^
+||*.descript.com^
+
+! --------------------------------------------------
+! 38. OUTRAS IAS / MOTORES / PLATAFORMAS
+! --------------------------------------------------
+||you.com^
+||*.you.com^
+||phind.com^
+||*.phind.com^
+||komo.ai^
+||*.komo.ai^
+||exa.ai^
+||*.exa.ai^
+||sciphi.ai^
+||*.sciphi.ai^
+||voyagerx.com^
+||*.voyagerx.com^
+||poe.com^
+||*.poe.com^
+||quora.com^$dnstype=~A|~AAAA|~CNAME
+||clarifai.com^
+||*.clarifai.com^
+||roboflow.com^
+||*.roboflow.com^
+||scale.ai^
+||*.scale.ai^
+||snorkel.ai^
+||*.snorkel.ai^
+||dataiku.com^
+||*.dataiku.com^
+||h2o.ai^
+||*.h2o.ai^
+||domino.ai^
+||*.domino.ai^
+||weights.gg^
+||*.weights.gg^
+||tensorpool.ai^
+||*.tensorpool.ai^
+||magic.dev^
+||*.magic.dev^
+||poolside.ai^
+||*.poolside.ai^
+||sierra.ai^
+||*.sierra.ai^
+||sierra.com^
+||*.sierra.com^
+
+! --------------------------------------------------
+! 39. CLOUDFLARE AI / WORKERS AI
+! --------------------------------------------------
 ||workers.ai^
+||*.workers.ai^
 ||gateway.ai.cloudflare.com^
+||*.gateway.ai.cloudflare.com^
 
-# ============================================================
-# REMOVIDAS (empresas genéricas com IA como feature):
-# salesforce, hubspot, oracle, sap, workday, servicenow,
-# atlassian, notion, slack, zoom, dropbox, box, monday,
-# clickup, asana, linear, figma, miro, grammarly, deepl,
-# zendesk, intercom, replit, sourcegraph, vacasa
-# ============================================================
+! --------------------------------------------------
+! 40. NVIDIA AI / NIM / FOUNDATION
+! --------------------------------------------------
+||nvidia.com^$dnstype=~A|~AAAA|~CNAME
+||build.nvidia.com^
+||*.build.nvidia.com^
+||ai.nvidia.com^
+||*.ai.nvidia.com^
+
+! --------------------------------------------------
+! 41. APPLE / SIRI / APPLE INTELLIGENCE
+! --------------------------------------------------
+||apple.com^$dnstype=~A|~AAAA|~CNAME
+||smoot.apple.com^
+||guzzoni.apple.com^
+||*.smoot.apple.com^
+||*.guzzoni.apple.com^
+
+! --------------------------------------------------
+! 42. SAMSUNG / GALAXY AI
+! --------------------------------------------------
+||samsung.com^$dnstype=~A|~AAAA|~CNAME
+||samsungapps.com^
+||*.samsungapps.com^
+
+! --------------------------------------------------
+! 43. WILDCARDS AGRESSIVOS DE DOMÍNIOS IA
+! --------------------------------------------------
+||*.ai^
+||*.ml^
+
+! ============================================================
+! FIM DA LISTA
+! Total: ~350+ entradas diretas + wildcards
+! ============================================================
