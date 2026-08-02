@@ -1,0 +1,230 @@
+# ============================================================
+# BLOCKLIST ADGUARD HOME — EMPRESAS DE IA (CORE BUSINESS)
+# Curada: removidas empresas genéricas (CRM, ERP, produtividade,
+# cloud geral) que apenas possuem IA como feature.
+# ============================================================
+
+# --------------------------------------------------
+# 1. GRANDES LABORATÓRIOS / MODELOS FUNDACIONAIS
+# --------------------------------------------------
+||openai.com^
+||chatgpt.com^
+||anthropic.com^
+||claude.ai^
+||cohere.com^
+||cohere.ai^
+||mistral.ai^
+||deepseek.com^
+||ai21.com^
+||alephalpha.com^
+||inflection.ai^
+||reka.ai^
+||liquid.ai^
+||sakana.ai^
+||together.ai^
+||nomic.ai^
+||mosaicml.com^
+||lighton.ai^
+||blackforestlabs.ai^
+||stability.ai^
+||huggingface.co^
+
+# --------------------------------------------------
+# 2. PROVEDORES DE API / INFERÊNCIA / DEPLOYMENT
+# --------------------------------------------------
+||openrouter.ai^
+||groq.com^
+||fireworks.ai^
+||deepinfra.com^
+||novita.ai^
+||replicate.com^
+||baseten.co^
+||predibase.com^
+||anyscale.com^
+||modal.com^
+||fal.ai^
+||banana.dev^
+
+# --------------------------------------------------
+# 3. IA PARA CÓDIGO / DESENVOLVIMENTO
+# --------------------------------------------------
+||cursor.com^
+||codeium.com^
+||windsurf.com^
+||tabnine.com^
+||blackbox.ai^
+||continue.dev^
+||aider.chat^
+
+# --------------------------------------------------
+# 4. AGENTES / AUTOMAÇÃO IA
+# --------------------------------------------------
+||crew.ai^
+||crewai.com^
+||babyagi.com^
+||superagi.com^
+||agentgpt.reworkd.ai^
+||fixie.ai^
+||adept.ai^
+||cognition.ai^
+||devin.ai^
+
+# --------------------------------------------------
+# 5. VOZ / SPEECH-TO-TEXT / TEXT-TO-SPEECH
+# --------------------------------------------------
+||elevenlabs.io^
+||assemblyai.com^
+||deepgram.com^
+||speechmatics.com^
+||rev.ai^
+||otter.ai^
+||aisense.com^
+||sonix.ai^
+||trint.com^
+||voicemod.net^
+||voicemod.ai^
+||cartesia.ai^
+||hume.ai^
+||smallest.ai^
+||vapi.ai^
+||retellai.com^
+||play.ai^
+
+# --------------------------------------------------
+# 6. MÚSICA / ÁUDIO GENERATIVO
+# --------------------------------------------------
+||suno.ai^
+||suno.com^
+||udio.com^
+||soundraw.io^
+||boomy.com^
+||aiva.ai^
+||beatoven.ai^
+||stableaudio.com^
+
+# --------------------------------------------------
+# 7. VÍDEO / IMAGEM GENERATIVA
+# --------------------------------------------------
+||synthesia.io^
+||heygen.com^
+||d-id.com^
+||leonardo.ai^
+||ideogram.ai^
+||krea.ai^
+||openart.ai^
+||civitai.com^
+||tensor.art^
+||getimg.ai^
+||genmo.ai^
+||kaiber.ai^
+
+# --------------------------------------------------
+# 8. LEGAL / IA JURÍDICA
+# --------------------------------------------------
+||harvey.ai^
+||casetext.com^
+||rossintelligence.com^
+||legalsifter.com^
+||doNotPay.com^
+
+# --------------------------------------------------
+# 9. CUSTOMER SERVICE / VENDAS / ENTERPRISE IA
+# (Core business é IA, não plataforma genérica)
+# --------------------------------------------------
+||ada.cx^
+||boost.ai^
+||ultimate.ai^
+||forethought.ai^
+||observe.ai^
+||cresta.com^
+||regie.ai^
+||lavender.ai^
+||moveworks.com^
+||glean.com^
+||dust.tt^
+||fin.ai^
+||aisera.com^
+
+# --------------------------------------------------
+# 10. COPYWRITING / MARKETING IA
+# --------------------------------------------------
+||jasper.ai^
+||copy.ai^
+||writesonic.com^
+||writer.com^
+||writer.ai^
+
+# --------------------------------------------------
+# 11. CHATBOTS / COMPANHEIROS IA
+# --------------------------------------------------
+||character.ai^
+||pi.ai^
+||replika.ai^
+
+# --------------------------------------------------
+# 12. TRADUÇÃO / LOCALIZAÇÃO IA
+# --------------------------------------------------
+||papercup.com^
+||translate.ai^
+
+# --------------------------------------------------
+# 13. BANCOS VETORIAIS / RAG / INFRASTRUCTURE
+# --------------------------------------------------
+||pinecone.io^
+||weaviate.io^
+||qdrant.tech^
+||milvus.io^
+||chroma.com^
+||lancedb.com^
+||vespa.ai^
+||zilliz.com^
+
+# --------------------------------------------------
+# 14. ECOSSISTEMAS CHINESES DE IA
+# --------------------------------------------------
+||qwen.ai^
+||tongyi.aliyun.com^
+||ernie.baidu.com^
+||wenxin.baidu.com^
+||hunyuan.tencent.com^
+||doubao.com^
+||kimi.com^
+||stepfun.com^
+||minimax.chat^
+
+# --------------------------------------------------
+# 15. PLATAFORMAS DE CONTEÚDO COM IA NATIVA
+# --------------------------------------------------
+||descript.com^
+
+# --------------------------------------------------
+# 16. INFRAESTRUTURA CLOUD IA (Endpoints / APIs)
+# --------------------------------------------------
+# AWS
+||bedrock.aws^
+||bedrock-runtime.*.amazonaws.com^
+||sagemaker.*.amazonaws.com^
+||runtime.sagemaker.*.amazonaws.com^
+
+# Google Cloud
+||vertexai.googleapis.com^
+||aiplatform.googleapis.com^
+||generativelanguage.googleapis.com^
+||aistudio.google.com^
+
+# Microsoft Azure
+||openai.azure.com^
+||cognitiveservices.azure.com^
+||ai.azure.com^
+
+# Cloudflare
+||workers.ai^
+||gateway.ai.cloudflare.com^
+
+# ============================================================
+# REMOVIDAS (empresas genéricas com IA como feature):
+# salesforce, hubspot, oracle, sap, workday, servicenow,
+# atlassian, notion, slack, zoom, dropbox, box, monday,
+# clickup, asana, linear, figma, miro, grammarly, deepl,
+# zendesk, intercom, replit, sourcegraph, vacasa
+# ============================================================
