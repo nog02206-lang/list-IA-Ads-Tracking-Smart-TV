@@ -6888,7 +6888,7 @@ content_parts.append("""# ======================================================
 # Labels alfanuméricos aleatórios
 /^([a-z0-9]{18,})\./
 # Mistura letra + número típica de DGA
-/^([a-z]*[0-9][a-z0-9]*[0-9][a-z0-9]*[0-9][a-z0-9]*)\./
+#/^([a-z]*[0-9][a-z0-9]*[0-9][a-z0-9]*[0-9][a-z0-9]*)\./
 # Hexadecimal longo
 /^([a-f0-9]{16,})\./
 # Base32
